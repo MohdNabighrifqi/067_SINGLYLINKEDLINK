@@ -161,6 +161,27 @@ int main()
 		}
 		break;
 
+		case'4':
+		{
+			if (mhs.listEmpty() == true)
+			{
+				cout << "\nList Kosongin";
+				break;
+			}
+			Node* previous, * current;
+			cout << endl << "Mauskan no mahasiswa yang dicari : ";
+			cin >> nim;
+			if (mhs.Search(nim, &previous, &current) == false)
+				cout << endl << "Data tidka ditemukan" << endl;
+			else
+			{
+				cout << endl << "Data ditemukan" << endl;
+				cout << "\nNo Mahasiswa : " << current->noMhs;
+				cout << "\n\nNama: " << current->nama;
+				cout << "\n";
+			}
+		}
+		break;
 		
 		}
 	}
