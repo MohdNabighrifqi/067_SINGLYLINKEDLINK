@@ -117,5 +117,10 @@ void List::traverse()/*Mengunjungi dna membaca data dalam list*/
 	}
 }
 
-
+int main()
+{
+	List mhs;
+	int nim;
+	char ch;
+}
 
